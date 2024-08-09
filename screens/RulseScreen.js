@@ -12,7 +12,7 @@ const RulseScreen = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
       <ImageBackground
-        source={require('../assets/bgr1.jpeg')}
+        source={require('../assets/updDiz/backgr_2.jpg')}
         style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <View style={{flex: 1, width: '100%', position: 'relative'}}>
           <SafeAreaView>
@@ -27,7 +27,7 @@ const RulseScreen = ({navigation}) => {
                 }}>
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: 'bold',
                     fontSize: 18,
                     marginBottom: 10,
@@ -40,7 +40,7 @@ const RulseScreen = ({navigation}) => {
 
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '400',
                     fontSize: 18,
                     marginBottom: 10,
@@ -54,7 +54,7 @@ const RulseScreen = ({navigation}) => {
 
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '400',
                     fontSize: 18,
                     marginBottom: 10,
@@ -68,7 +68,7 @@ const RulseScreen = ({navigation}) => {
 
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '400',
                     fontSize: 18,
                     marginBottom: 10,
@@ -81,7 +81,7 @@ const RulseScreen = ({navigation}) => {
 
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '400',
                     fontSize: 18,
                     marginBottom: 10,
@@ -94,7 +94,7 @@ const RulseScreen = ({navigation}) => {
 
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '400',
                     fontSize: 18,
                     marginBottom: 10,
@@ -107,7 +107,7 @@ const RulseScreen = ({navigation}) => {
 
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '400',
                     fontSize: 18,
                     marginBottom: 10,
@@ -120,7 +120,7 @@ const RulseScreen = ({navigation}) => {
 
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '400',
                     fontSize: 18,
                     marginBottom: 10,
@@ -144,7 +144,7 @@ const RulseScreen = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'center',
               borderWidth: 3,
-              borderColor: '#ccc',
+              borderColor: '#ffcd00',
               width: 60,
               height: 60,
               borderRadius: 10,
@@ -153,8 +153,8 @@ const RulseScreen = ({navigation}) => {
             onPress={() => {
               navigation.navigate('Home');
             }}>
-            <Text style={{color: '#ccc'}}>GO</Text>
-            <Text style={{color: '#ccc'}}>BACK</Text>
+            <Text style={{color: '#ffcd00'}}>GO</Text>
+            <Text style={{color: '#ffcd00'}}>BACK</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>

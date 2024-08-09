@@ -5,13 +5,13 @@ const HomeScreen = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
       <ImageBackground
-        source={require('../assets/bgr1.jpeg')}
+        source={require('../assets/updDiz/backgr_1.jpg')}
         style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <TouchableOpacity
           activeOpacity={0.6}
           style={{
             borderWidth: 3,
-            borderColor: '#ccc',
+            borderColor: '#ffcd00',
             width: 280,
             height: 80,
             alignItems: 'center',
@@ -19,19 +19,19 @@ const HomeScreen = ({navigation}) => {
             borderRadius: 30,
             marginTop: -50,
             marginBottom: 20,
-            backgroundColor: 'rgba(0,0,0,0.7)',
+            backgroundColor: 'rgba(0,32,73,100)',
           }}
           onPress={() => {
             navigation.navigate('LvlSelection');
           }}>
-          <Text style={{color: '#ccc', fontSize: 30}}>Game</Text>
+          <Text style={{color: '#ffcd00', fontSize: 30}}>Game</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           activeOpacity={0.6}
           style={{
             borderWidth: 3,
-            borderColor: '#ccc',
+            borderColor: '#ffcd00',
             width: 280,
             height: 80,
             alignItems: 'center',
@@ -39,12 +39,12 @@ const HomeScreen = ({navigation}) => {
             borderRadius: 30,
             //marginTop: -50,
             marginBottom: 20,
-            backgroundColor: 'rgba(0,0,0,0.7)',
+            backgroundColor: 'rgba(0,32,73,100)',
           }}
           onPress={() => {
             navigation.navigate('Rulse');
           }}>
-          <Text style={{color: '#ccc', fontSize: 30}}>Rulse</Text>
+          <Text style={{color: '#ffcd00', fontSize: 30}}>Rulse</Text>
         </TouchableOpacity>
       </ImageBackground>
     </View>

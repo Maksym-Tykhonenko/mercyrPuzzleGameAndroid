@@ -40,8 +40,17 @@ const App = () => {
 
     return (
       <View style={{position: 'relative', flex: 1}}>
+        <Image
+          style={{
+            ...props.style,
+
+            height: '100%',
+            position: 'absolute', // Bind opacity to animated value
+          }}
+          source={require('./assets/updDiz/backgr_1.jpg')}
+        />
         <Animated.Image
-          source={require('./assets/bgr1.jpeg')} // Special animatable View
+          source={require('./assets/updDiz/loader.jpg')} // Special animatable View
           style={{
             ...props.style,
             opacity: appearingAnim,

@@ -141,7 +141,7 @@ const LvlSelectionScreen = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
       <ImageBackground
-        source={require('../assets/bgr1.jpeg')}
+        source={require('../assets/updDiz/backgr_2.jpg')}
         style={{
           flex: 1,
           alignItems: 'center',
@@ -150,13 +150,13 @@ const LvlSelectionScreen = ({navigation}) => {
         <View style={{flex: 1, width: '100%', position: 'relative'}}>
           {/**LVL`s Block */}
           <View style={{marginHorizontal: 10, marginTop: 40, marginBottom: 10}}>
-            {/** LOGO 
+            {/** LOGO */}
             <View style={{alignItems: 'center', marginBottom: 10}}>
               <Image
                 source={require('../assets/updDiz/MerkurGames.png')}
                 style={{width: 200, height: 60}}
               />
-            </View>*/}
+            </View>
             <ScrollView>
               {/**MARCYRY Lvl*/}
               <TouchableOpacity
@@ -170,7 +170,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: '#ccc',
+                  borderColor: '#ffcd00',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -182,7 +182,8 @@ const LvlSelectionScreen = ({navigation}) => {
                     borderTopRightRadius: 10,
                   }}
                 />
-                <Text style={{color: '#fff', fontWeight: '700', fontSize: 18}}>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: '700', fontSize: 18}}>
                   Merkur
                 </Text>
               </TouchableOpacity>
@@ -202,7 +203,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: venusAnlock ? '#ccc' : '#333333',
+                  borderColor: venusAnlock ? '#ffcd00' : '#333333',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -216,7 +217,7 @@ const LvlSelectionScreen = ({navigation}) => {
                 />
                 <Text
                   style={{
-                    color: '#fff',
+                    color: '#ffcd00',
                     fontWeight: '700',
                     fontSize: 18,
                   }}>
@@ -239,7 +240,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: earthAnlock ? '#ccc' : '#333333',
+                  borderColor: earthAnlock ? '#ffcd00' : '#333333',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -251,7 +252,8 @@ const LvlSelectionScreen = ({navigation}) => {
                     borderTopRightRadius: 10,
                   }}
                 />
-                <Text style={{color: '#fff', fontWeight: '700', fontSize: 18}}>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: '700', fontSize: 18}}>
                   Earth
                 </Text>
               </TouchableOpacity>
@@ -271,7 +273,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: marsAnlock ? '#ccc' : '#333333',
+                  borderColor: marsAnlock ? '#ffcd00' : '#333333',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -283,7 +285,8 @@ const LvlSelectionScreen = ({navigation}) => {
                     borderTopRightRadius: 10,
                   }}
                 />
-                <Text style={{color: '#fff', fontWeight: '700', fontSize: 18}}>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: '700', fontSize: 18}}>
                   Mars
                 </Text>
               </TouchableOpacity>
@@ -303,7 +306,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: jupiterAnlock ? '#ccc' : '#333333',
+                  borderColor: jupiterAnlock ? '#ffcd00' : '#333333',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -315,7 +318,8 @@ const LvlSelectionScreen = ({navigation}) => {
                     borderTopRightRadius: 10,
                   }}
                 />
-                <Text style={{color: '#fff', fontWeight: '700', fontSize: 18}}>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: '700', fontSize: 18}}>
                   Jupiter
                 </Text>
               </TouchableOpacity>
@@ -335,7 +339,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: saturnAnlock ? '#ccc' : '#333333',
+                  borderColor: saturnAnlock ? '#ffcd00' : '#333333',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -347,7 +351,8 @@ const LvlSelectionScreen = ({navigation}) => {
                     borderTopRightRadius: 10,
                   }}
                 />
-                <Text style={{color: '#fff', fontWeight: '700', fontSize: 18}}>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: '700', fontSize: 18}}>
                   Saturn
                 </Text>
               </TouchableOpacity>
@@ -367,7 +372,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: uranAnlock ? '#ccc' : '#333333',
+                  borderColor: uranAnlock ? '#ffcd00' : '#333333',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -379,7 +384,8 @@ const LvlSelectionScreen = ({navigation}) => {
                     borderTopRightRadius: 10,
                   }}
                 />
-                <Text style={{color: '#fff', fontWeight: '700', fontSize: 18}}>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: '700', fontSize: 18}}>
                   Uran
                 </Text>
               </TouchableOpacity>
@@ -399,7 +405,7 @@ const LvlSelectionScreen = ({navigation}) => {
                   justifyContent: 'center',
                   borderRadius: 10,
                   borderWidth: 2,
-                  borderColor: neptunAnlock ? '#ccc' : '#333333',
+                  borderColor: neptunAnlock ? '#ffcd00' : '#333333',
                   marginBottom: 15,
                 }}>
                 <Image
@@ -411,7 +417,8 @@ const LvlSelectionScreen = ({navigation}) => {
                     borderTopRightRadius: 10,
                   }}
                 />
-                <Text style={{color: '#fff', fontWeight: '700', fontSize: 18}}>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: '700', fontSize: 18}}>
                   Neptun
                 </Text>
               </TouchableOpacity>
@@ -428,7 +435,7 @@ const LvlSelectionScreen = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'center',
               borderWidth: 3,
-              borderColor: '#ccc',
+              borderColor: '#ffcd00',
               width: 60,
               height: 60,
               borderRadius: 10,
@@ -437,8 +444,8 @@ const LvlSelectionScreen = ({navigation}) => {
             onPress={() => {
               navigation.navigate('Home');
             }}>
-            <Text style={{color: '#ccc'}}>GO</Text>
-            <Text style={{color: '#ccc'}}>BACK</Text>
+            <Text style={{color: '#ffcd00'}}>GO</Text>
+            <Text style={{color: '#ffcd00'}}>BACK</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>
