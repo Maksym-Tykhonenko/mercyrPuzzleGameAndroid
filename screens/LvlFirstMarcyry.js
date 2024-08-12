@@ -6,6 +6,7 @@ import {
   View,
   Image,
   Alert,
+  ScrollView,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -207,7 +208,6 @@ const LvlFirstMarcyry = ({navigation}) => {
               style={{width: 200, height: 60}}
             />
           </View>
-
           {/**Timer */}
           <View style={{flexDirection: 'row', marginBottom: 20}}>
             {isRuning ? (
@@ -266,77 +266,67 @@ const LvlFirstMarcyry = ({navigation}) => {
               {formatTime(timer)}
             </Text>
           </View>
-
-          <View
-            style={{
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-              width: 300,
-              borderTopWidth: 10,
-              borderLeftWidth: 10,
-              borderRightWidth: 10,
-              borderBottomWidth: 10,
-              //borderTopLeftRadius: 50,
-              //borderTopRightRadius: 50,
-              borderColor: '#ffcd00',
-            }}>
-            {board.map((piece, index) => (
-              <TouchableOpacity
-                key={index}
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <View style={{alignItems: 'center'}}>
+              {/**PAZLE */}
+              <View
                 style={{
-                  width: 70,
-                  height: 70,
-                  justifyContent: 'center',
-                  //alignItems: 'center',
-                  backgroundColor: 'lightblue',
-                }}
-                onPress={() => movePiece(index)}
-                disabled={!canMovePiece(index) || !isRuning}>
-                <Image source={piece.image} style={{width: 70, height: 70}} />
-              </TouchableOpacity>
-            ))}
-          </View>
-          <View>
-            <Text style={{color: '#ffcd00', fontWeight: 'bold', fontSize: 20}}>
-              MERKUR
-            </Text>
-          </View>
-          <View style={{flexDirection: 'row'}}>
-            <Image
-              style={{
-                marginLeft: 0,
-                //marginTop: 10,
-                width: 200,
-                height: 200,
-                borderWidth: 1,
-                borderColor: '#ffcd00',
-                justifyContent: 'flex-start',
-              }}
-              source={require('../assets/planats/mercury.jpeg')}
-            />
-          </View>
-          {/**BTN back */}
-          <TouchableOpacity
-            style={{
-              position: 'absolute',
-              bottom: 10,
-              right: 10,
-              alignItems: 'center',
-              justifyContent: 'center',
-              borderWidth: 3,
-              borderColor: '#ffcd00',
-              width: 60,
-              height: 60,
-              borderRadius: 10,
-              backgroundColor: 'rgba(0, 0, 0, 0.7)',
-            }}
-            onPress={() => {
-              navigation.navigate('Home');
-            }}>
-            <Text style={{color: '#ffcd00'}}>GO</Text>
-            <Text style={{color: '#ffcd00'}}>BACK</Text>
-          </TouchableOpacity>
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  width: 300,
+                  borderTopWidth: 10,
+                  borderLeftWidth: 10,
+                  borderRightWidth: 10,
+                  borderBottomWidth: 10,
+                  //borderTopLeftRadius: 50,
+                  //borderTopRightRadius: 50,
+                  borderColor: '#ffcd00',
+                }}>
+                {board.map((piece, index) => (
+                  <TouchableOpacity
+                    key={index}
+                    style={{
+                      width: 70,
+                      height: 70,
+                      justifyContent: 'center',
+                      //alignItems: 'center',
+                      backgroundColor: 'lightblue',
+                    }}
+                    onPress={() => movePiece(index)}
+                    disabled={!canMovePiece(index) || !isRuning}>
+                    <Image
+                      source={piece.image}
+                      style={{width: 70, height: 70}}
+                    />
+                  </TouchableOpacity>
+                ))}
+              </View>
 
+              {/**NAME */}
+              <View>
+                <Text
+                  style={{color: '#ffcd00', fontWeight: 'bold', fontSize: 20}}>
+                  MERKUR
+                </Text>
+              </View>
+
+              {/**IMG */}
+              <View style={{flexDirection: 'row'}}>
+                <Image
+                  style={{
+                    marginLeft: 0,
+                    //marginTop: 10,
+                    width: 200,
+                    height: 200,
+                    borderWidth: 1,
+                    borderColor: '#ffcd00',
+                    justifyContent: 'flex-start',
+                  }}
+                  source={require('../assets/planats/mercury.jpeg')}
+                />
+              </View>
+            </View>
+          </ScrollView>
           {/**BTN go to next lvl */}
           {venusAnlock && (
             <TouchableOpacity
@@ -388,6 +378,28 @@ const LvlFirstMarcyry = ({navigation}) => {
               </Text>
             </TouchableOpacity>
           )}
+
+          {/**BTN back */}
+          <TouchableOpacity
+            style={{
+              position: 'absolute',
+              bottom: 10,
+              right: 10,
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderWidth: 3,
+              borderColor: '#ffcd00',
+              width: 60,
+              height: 60,
+              borderRadius: 10,
+              backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            }}
+            onPress={() => {
+              navigation.navigate('Home');
+            }}>
+            <Text style={{color: '#ffcd00'}}>GO</Text>
+            <Text style={{color: '#ffcd00'}}>BACK</Text>
+          </TouchableOpacity>
         </View>
       </ImageBackground>
     </View>

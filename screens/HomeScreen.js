@@ -1,9 +1,15 @@
 import React from 'react';
-import {ImageBackground, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Image,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
 const HomeScreen = ({navigation}) => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, position: 'relative'}}>
       <ImageBackground
         source={require('../assets/updDiz/backgr_1.jpg')}
         style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -45,6 +51,26 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('Rulse');
           }}>
           <Text style={{color: '#ffcd00', fontSize: 30}}>Rulse</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          activeOpacity={0.6}
+          style={{
+            position: 'absolute',
+            top: 20,
+            right: 0,
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderRadius: 30,
+            backgroundColor: 'rgba(0,32,73,100)',
+          }}
+          onPress={() => {
+            navigation.navigate('ProfileScreen');
+          }}>
+          <Image
+            style={{width: 80, height: 80}}
+            source={require('../assets/user.png')}
+          />
         </TouchableOpacity>
       </ImageBackground>
     </View>
