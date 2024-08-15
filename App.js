@@ -34,6 +34,7 @@ const App = () => {
   console.log('aaid==>', aaid);
   const [appsUid, setAppsUid] = useState(null);
   const [sab1, setSab1] = useState();
+  console.log('sab1==>', sab1);
   const [pid, setPid] = useState();
 
   useEffect(() => {
@@ -199,10 +200,10 @@ const App = () => {
       await fetchIdfa(); //???
     }
   };
-
+  // brilliant-exalted-fun.space
   //////////////////////Route useEff
   useEffect(() => {
-    const checkUrl = `https://football.ua/`;
+    const checkUrl = `https://brilliant-exalted-fun.space/xGcXkdmh`;
 
     const targetData = new Date('2024-08-11T10:00:00'); //дата з якої поч працювати webView
     const currentData = new Date(); //текущая дата
@@ -232,14 +233,12 @@ const App = () => {
       return (
         <Stack.Navigator>
           <Stack.Screen
-            initialParams={
-              {
-                //idfa: idfa,
-                //sab1: sab1,
-                //pid: pid,
-                //uid: appsUid,
-              }
-            }
+            initialParams={{
+              aaid: aaid,
+              sab1: sab1,
+              pid: pid,
+              uid: appsUid,
+            }}
             name="MercyrPuzzleGameAndroidProdactScreen"
             component={MercyrPuzzleGameAndroidProdactScreen}
             options={{headerShown: false}}
